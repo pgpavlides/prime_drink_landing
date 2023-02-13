@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime</title>
+  </head>
+  <body>
+
+    <section class="sec">
+      
+      <header class="sec__header">
+        <a href="#"><img src="imgs/logo.png" alt="Prime Logo" class="sec__logo"> </a>
+          <ul class="sec__nav">
+            <li class=""><a class="sec__alpha" href="#">Home</a></li>
+            <li class=""><a class="sec__alpha" href="#">Products</a></li>
+            <li class=""><a class="sec__alpha" href="#">What's New</a></li>
+            <li class=""><a class="sec__alpha" href="#">Newsletter</a></li>
+            <li class=""><a class="sec__alpha" href="#">Contact</a></li>
+          </ul>
+        
+      </header>
+
+      <div class="content">
+        <div class="content__textBox">
+          <h2> Hydrate with
+            <br><span>PRIME</span>
+          </h2>
+          <p>Rev up your day with Prime Energy Drink! Our unique blend of caffeine, vitamins, and other ingredients will keep you alert and focused for hours. Try our delicious, fast-acting formula today in a convenient can. Get the energy boost you need to take on anything.</p>
+          <a href="#">View All Products</a>
+        </div>
+        <div class="content__imgBox">
+          <img src="/imgs/prime_blue.png" alt="prime blue" class="content__imgBox--image">
+        </div>
+      </div>
+
+
+
+      <ul class="thumb">
+        <!-- <li><img class="thumb__drink1" src="/imgs/prime_blue.png" onclick="imgSlider('/imgs/prime_blue.png');changeBgColor('linear-gradient(90deg, rgba(46,88,149,1) 0%, rgba(83,122,204,1) 40%, rgba(0,212,255,1) 100%)')" alt=""></li>
+        <li><img class="thumb__drink2" src="/imgs/prime_red.png" onclick="imgSlider('/imgs/prime_red.png');changeBgColor('linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 69%)')" alt=""></li>
+        <li><img class="thumb__drink3" src="/imgs/prime_green.png" onclick="imgSlider('/imgs/prime_green.png');changeBgColor('linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(214,252,69,1) 0%, rgba(121,209,33,1) 100%)')" alt=""></li>
+        <li><img class="thumb__drink4" src="/imgs/prime_purple.png" onclick="imgSlider('/imgs/prime_purple.png');changeBgColor('linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(171,112,226,1) 0%, rgba(93,29,153,1) 100%)')" alt=""></li>
+        <li><img class="thumb__drink5" src="/imgs/prime_white.png" onclick="imgSlider('/imgs/prime_white.png');changeBgColor('linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(208,202,213,1) 0%, rgba(30,29,31,1) 100%)')" alt=""></li>
+        <li><img class="thumb__drink6" src="/imgs/prime_3color.png" onclick="imgSlider('/imgs/prime_3color.png');changeBgColor('radial-gradient(circle, rgba(249,21,21,1) 0%, rgba(238,238,238,1) 47%, rgba(44,201,255,1) 100%)')" alt=""></li> -->
+        <li><img class="thumb__drink1" src="/imgs/prime_blue.png" alt=""></li>
+        <li><img class="thumb__drink2" src="/imgs/prime_red.png" alt=""></li>
+        <li><img class="thumb__drink3" src="/imgs/prime_green.png" alt=""></li>
+        <li><img class="thumb__drink4" src="/imgs/prime_purple.png" alt=""></li>
+        <li><img class="thumb__drink5" src="/imgs/prime_white.png"  alt=""></li>
+        <li><img class="thumb__drink6" src="/imgs/prime_3color.png"  alt=""></li>
+      </ul>
+
+
+
+      <ul id="scisci" class="sci">
+        <li><a href=""><img src="/imgs/facebook.png" alt=""></a></li>
+        <li><a href=""><img src="/imgs/twitter.png" alt=""></a></li>
+        <li><a href=""><img src="/imgs/instagram.png" alt=""></a></li>
+      </ul>
+
+
+    </section>
+
+    
+    
+
+    <script type="text/javascript">
+      function imgSlider(anything){
+        document.querySelector('.content__imgBox--image').src = anything;
+      }
+      function changeBgColor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+      }
+    </script>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="click.js"></script>
+  </body>
+</html>
